@@ -7,8 +7,8 @@ container:
 
 .PHONY: run
 run:
-	docker run -d -v `cd ../..; pwd`:/builder --hostname=cypb --name=cypb builder
+	docker run -d -v `cd ../..; pwd`:/builder --hostname=builder --name=builder builder
 
 .PHONY: debug
 debug:
-	docker run -ti -v `cd ../..; pwd`:/builder --hostname=cypb --name=cypb builder
+	docker run -ti -v `cd ../..; pwd`:/builder --hostname=builder --name=builder builder
